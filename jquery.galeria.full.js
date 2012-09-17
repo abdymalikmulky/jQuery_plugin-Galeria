@@ -22,6 +22,7 @@
 			
 			$('#kotakgambar').fadeIn('slow');
 			
+			
 			$('<div id="title">&nbsp;'+$(this).attr('title')+'</div>').appendTo('#kotakgambar');
 				
 			$('<img />').attr('src',$(this).attr('href')).load(function()
@@ -29,7 +30,7 @@
 				$('#title').css('top',$(this).height()-($('#title').height()+10))
 				if(heightdoc < $(this).height())
 				{
-					$(this).css('height',heightdoc-50);
+					$(this).css('height',heightdoc-150);
 					$('#title').css('top',$(this).height()-($('#title').height()+10))
 				}
 				muncul();
